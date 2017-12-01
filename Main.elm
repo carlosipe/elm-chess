@@ -1,14 +1,7 @@
 module Main exposing (..)
 
 import Html
-
-
-type alias Model =
-    Int
-
-
-initialModel =
-    3
+import Model exposing (Model)
 
 
 type Msg
@@ -24,13 +17,9 @@ view model =
     Html.text "Chess view"
 
 
-
--- program
-
-
 init : ( Model, Cmd Msg )
 init =
-    ( initialModel, Cmd.none )
+    ( Model.initialModel, Cmd.none )
 
 
 main : Program Never Model Msg

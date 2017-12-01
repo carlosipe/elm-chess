@@ -2,6 +2,7 @@ module Main exposing (..)
 
 import Html
 import Model exposing (Model)
+import View exposing (view)
 
 
 type Msg
@@ -11,10 +12,6 @@ type Msg
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     ( model, Cmd.none )
-
-
-view model =
-    Html.text "Chess view"
 
 
 init : ( Model, Cmd Msg )
